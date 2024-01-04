@@ -1,6 +1,9 @@
+---
+layout: page
+title: "Personnaliser la Gestion DNS dans WSL : Empêcher la Réinitialisation de /etc/resolv.conf"
+---
 
-
-**Titre : Personnaliser la Gestion DNS dans WSL : Empêcher la Réinitialisation de `/etc/resolv.conf`**
+###Personnaliser la Gestion DNS dans WSL : Empêcher la Réinitialisation de `/etc/resolv.conf`
 
 ---
 
