@@ -51,6 +51,7 @@ Dans certains cas, malgré ces changements, `/etc/resolv.conf` peut être suppri
        echo "Création de /etc/resolv.conf"
        echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
        echo "nameserver 8.8.4.4" | sudo tee -a /etc/resolv.conf > /dev/null
+       sudo chmod 444 /etc/resolv.conf
    fi
    ```
 
