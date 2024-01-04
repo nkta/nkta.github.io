@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Configuration Automatique de Docker avec WSL"
+---
 
 ### Configuration Automatique de Docker avec WSL
 
