@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Configuration Automatique de Docker avec WSL"
+---
+
 ### Configuration Automatique de Docker avec WSL
 
 **Objectif** : Faire démarrer Docker automatiquement lors de l'ouverture d'une session WSL.
