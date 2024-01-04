@@ -7,31 +7,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-Hello World <br />
-<a href="auto-start-docker-wsl">Configuration Automatique de Docker avec WSL</a> <br />
-<div class="container">
+
+<div class="container mt-3">
     <!-- Onglets de navigation -->
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <ul class="nav nav-tabs" id="articleTab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="article1-tab" data-toggle="tab" href="#article1" role="tab" aria-controls="article1" aria-selected="true">Article 1</a>
+            <a class="nav-link active" id="categorie1-tab" data-toggle="tab" href="#categorie1" role="tab" aria-controls="categorie1" aria-selected="true">Catégorie 1</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="article2-tab" data-toggle="tab" href="#article2" role="tab" aria-controls="article2" aria-selected="false">Article 2</a>
+            <a class="nav-link" id="categorie2-tab" data-toggle="tab" href="#categorie2" role="tab" aria-controls="categorie2" aria-selected="false">Catégorie 2</a>
         </li>
-        <!-- Autres onglets ici -->
+        <!-- Plus d'onglets si nécessaire -->
     </ul>
 
-    <!-- Contenu des onglets -->
-    <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="article1" role="tabpanel" aria-labelledby="article1-tab">
-            <h3>Article 1</h3>
-            <a href="auto-start-docker-wsl">Configuration Automatique de Docker avec WSL</a> <br />
+    <!-- Panneaux de contenu des onglets -->
+    <div class="tab-content" id="articleTabContent">
+        <!-- Contenu de la Catégorie 1 -->
+        <div class="tab-pane fade show active" id="categorie1" role="tabpanel" aria-labelledby="categorie1-tab">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="lien-vers-article-1">Article 1</a></li>
+                <li class="list-group-item"><a href="lien-vers-article-2">Article 2</a></li>
+                <!-- Plus de liens vers des articles si nécessaire -->
+            </ul>
         </div>
-        <div class="tab-pane fade" id="article2" role="tabpanel" aria-labelledby="article2-tab">
-            <h3>Article 2</h3>
-            <p>Contenu de l'article 2...</p>
+        
+        <!-- Contenu de la Catégorie 2 -->
+        <div class="tab-pane fade" id="categorie2" role="tabpanel" aria-labelledby="categorie2-tab">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="lien-vers-article-3">Article 3</a></li>
+                <li class="list-group-item"><a href="lien-vers-article-4">Article 4</a></li>
+                <!-- Plus de liens vers des articles si nécessaire -->
+            </ul>
         </div>
-        <!-- Autres contenus d'onglets ici -->
+
+        <!-- Plus de panneaux de contenu pour d'autres catégories si nécessaire -->
     </div>
 </div>
 
