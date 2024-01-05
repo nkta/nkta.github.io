@@ -28,11 +28,11 @@ Windows configure les fonctionnalités et nécessite un redémarrage.
 Une fois de retour dans Windows, nous pouvons maintenant télécharger le système Linux que nous souhaitons utiliser. Puisque nous ne pouvons pas télécharger Linux depuis le store, voici quelques liens directs.
 
 - [Ubuntu 20.04](https://aka.ms/wslubuntu2004)
-- `[Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)`
-- `[openSUSE Lead 15.2](https://aka.ms/wsl-opensuseleap15-2)`
-- `[Debian](https://aka.ms/wsl-debian-gnulinux)`
+- [Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)
+- [openSUSE Lead 15.2](https://aka.ms/wsl-opensuseleap15-2)
+- [Debian](https://aka.ms/wsl-debian-gnulinux)
 
-Le package que nous avons téléchargé est un package .appx. Ne démarrez pas le package. Au lieu de cela, nous devons extraire l'archive. `[7-Zip](https://www.7-zip.org/download.html)` est bien adapté pour cela.
+Le package que nous avons téléchargé est un package .appx. Ne démarrez pas le package. Au lieu de cela, nous devons extraire l'archive. [7-Zip](https://www.7-zip.org/download.html) est bien adapté pour cela.
 
 Après avoir extrait le package, nous pouvons maintenant commencer l'installation de Linux. Au moins les utilisateurs de Windows 10 le peuvent.
 
@@ -44,7 +44,7 @@ WslRegisterDistribution failed with error: 0x800701bc
 Error: 0x800701bc WSL2 requires an update to ist kernel component.
 ```
 
-Nous pouvons télécharger la mise à jour `[ici](https://learn.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)`.
+Nous pouvons télécharger la mise à jour [ici](https://learn.microsoft.com/fr-fr/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package).
 
 Exécutez l'installateur de la mise à jour.
 
