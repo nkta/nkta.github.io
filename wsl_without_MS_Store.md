@@ -6,6 +6,8 @@ title: "Windows 11 : Installer le sous-système Linux sans le Microsoft Store"
 # Windows 11 : Installer le sous-système Linux sans le Microsoft Store
 10 décembre 2021 - Andy, Logiciels
 
+[Article original](https://ekiwi-blog.de/en/17814/windows-11-install-linux-subsystem-without-microsoft-store/?source=post_page-----f85571c1b819)
+
 *Installer le sous-système Linux dans Windows 11 sans passer par le Microsoft Store.*
 
 La façon la plus simple d'installer un Linux, comme Ubuntu, dans Windows 11 est via le Windows Store. Cependant, dans les entreprises, le store est souvent bloqué. Mais vous pouvez installer manuellement le sous-système Linux pour Windows. Ces instructions fonctionnent également pour Windows 10.
