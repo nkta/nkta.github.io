@@ -1,3 +1,7 @@
+---
+layout: page
+title: "Windows 11 : Installer le sous-système Linux sans le Microsoft Store"
+---
 
 ### Windows 11 : Installer le sous-système Linux sans le Microsoft Store
 10 décembre 2021 - Andy, Logiciels
