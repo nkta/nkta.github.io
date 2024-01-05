@@ -3,19 +3,19 @@ layout: page
 title: "Windows 11 : Installer le sous-système Linux sans le Microsoft Store"
 ---
 
-### Windows 11 : Installer le sous-système Linux sans le Microsoft Store
+# Windows 11 : Installer le sous-système Linux sans le Microsoft Store
 10 décembre 2021 - Andy, Logiciels
 
 *Installer le sous-système Linux dans Windows 11 sans passer par le Microsoft Store.*
 
 La façon la plus simple d'installer un Linux, comme Ubuntu, dans Windows 11 est via le Windows Store. Cependant, dans les entreprises, le store est souvent bloqué. Mais vous pouvez installer manuellement le sous-système Linux pour Windows. Ces instructions fonctionnent également pour Windows 10.
 
-**Table des matières**
+## Table des matières
 - Tutoriel vidéo
 - Instructions
 - Téléchargement et installation
 
-**Instructions**
+## Instructions
 Dans les paramètres, allez dans Applications et ouvrez les "Fonctionnalités optionnelles".
 
 Faites défiler jusqu'en bas et cliquez sur "Plus de fonctionnalités Windows".
@@ -24,10 +24,10 @@ Nous devons installer deux choses ici : la "Plateforme Hyper-V" et le "Sous-syst
 
 Windows configure les fonctionnalités et nécessite un redémarrage.
 
-**Téléchargement et installation**
+## Téléchargement et installation
 Une fois de retour dans Windows, nous pouvons maintenant télécharger le système Linux que nous souhaitons utiliser. Puisque nous ne pouvons pas télécharger Linux depuis le store, voici quelques liens directs.
 
-- `[Ubuntu 20.04](https://aka.ms/wslubuntu2004)`
+- `[Ubuntu 20.04](http://aka.ms/wslubuntu2004)`
 - `[Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)`
 - `[openSUSE Lead 15.2](https://aka.ms/wsl-opensuseleap15-2)`
 - `[Debian](https://aka.ms/wsl-debian-gnulinux)`
