@@ -27,7 +27,7 @@ Windows configure les fonctionnalités et nécessite un redémarrage.
 ## Téléchargement et installation
 Une fois de retour dans Windows, nous pouvons maintenant télécharger le système Linux que nous souhaitons utiliser. Puisque nous ne pouvons pas télécharger Linux depuis le store, voici quelques liens directs.
 
-- `[Ubuntu 20.04](https://aka.ms/wslubuntu2004)`
+- [Ubuntu 20.04](https://aka.ms/wslubuntu2004)
 - `[Ubuntu 18.04](https://aka.ms/wsl-ubuntu-1804)`
 - `[openSUSE Lead 15.2](https://aka.ms/wsl-opensuseleap15-2)`
 - `[Debian](https://aka.ms/wsl-debian-gnulinux)`
