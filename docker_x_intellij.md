@@ -1,4 +1,9 @@
-# Plan de l'Article : "Optimisation du Développement Java avec Docker et IntelliJ IDEA"
+---
+layout: page
+title: "Optimisation du Développement Java avec Docker et IntelliJ IDEA"
+---
+
+# Optimisation du Développement Java avec Docker et IntelliJ IDEA
 
 ## Introduction
 
