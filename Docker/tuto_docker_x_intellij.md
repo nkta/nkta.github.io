@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Tuto sur la configuration de Docker pour IntelliJ"
+---
+
 # Tuto sur la configuration de Docker pour IntelliJ
 
 ## Prérequis
