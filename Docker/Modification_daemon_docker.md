@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Comment Modifier l'Adresse IP du Réseau Bridge de Docker"
+---
+
 # Comment Modifier l'Adresse IP du Réseau Bridge de Docker
 
 ### Introduction
