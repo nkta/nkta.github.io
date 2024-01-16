@@ -47,7 +47,10 @@ title: "Tuto sur la configuration de Docker pour IntelliJ"
            - "8080:8080"
            - "5005:5005"
          environment:
+           # Pour java 9 et plus
            - JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+           # Pour java 8 ou avant
+           #- JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
          volumes:
            - .:/app
            - maven_cache:/root/.m2
