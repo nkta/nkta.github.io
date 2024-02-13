@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Comment Gérer et Récupérer l'Espace Disque avec WSL2"
+---
+
 # Comment Gérer et Récupérer l'Espace Disque avec WSL2
 
 Le Windows Subsystem for Linux 2 (WSL2) a révolutionné la façon dont les développeurs utilisent Windows, en offrant une intégration sans précédent des fonctionnalités Linux directement sur le bureau Windows. Cependant, une question récurrente concerne la gestion de l'espace disque utilisé par WSL2, en particulier comment l'espace est géré dynamiquement et ce qui arrive à cet espace lorsque des fichiers sont supprimés à l'intérieur de WSL2.
