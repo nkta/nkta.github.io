@@ -1,3 +1,8 @@
+---
+layout: page
+title: "Résolution du problème de version iptables dans Ubuntu 22.04 en utilisant iptables-legacy"
+---
+
  Titre: Résolution du problème de version iptables dans Ubuntu 22.04 en utilisant iptables-legacy
 
 Introduction:
