@@ -40,7 +40,6 @@ Le package Genie n'est pas disponible dans les dépôts standards, nous allons d
 
 ```bash
 sudo dpkg -i systemd-genie_<version>_amd64.deb
-sudo dpkg -i libpam-systemd_<version>_amd64.deb
 ```
 
 Remplacez `<version>` par la version spécifique que vous avez téléchargée.
@@ -79,12 +78,6 @@ Pour appliquer toutes les modifications, redémarrez WSL :
 
 ```powershell
 wsl --shutdown
-```
-
-Ouvrez ensuite une nouvelle instance de WSL et démarrez Genie :
-
-```bash
-genie -s
 ```
 
 ## Étape 6 : Vérification
