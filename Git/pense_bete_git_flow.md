@@ -116,7 +116,3 @@ Cette commande fusionne la branche dans `main` et `develop`, tagge la version co
 Git Flow est un outil puissant pour structurer vos workflows de développement. En utilisant ces commandes, vous pouvez garder vos branches organisées et assurer une livraison fluide de vos projets. Adoptez Git Flow pour une gestion plus efficace des versions et des fonctionnalités, tout en maintenant la qualité de votre code.
 
 N’hésitez pas à intégrer ces commandes dans votre routine et à les partager avec votre équipe pour améliorer la collaboration. 🎯
-
----
-
-Avez-vous des questions ou des points spécifiques que vous aimeriez approfondir ? 😊
