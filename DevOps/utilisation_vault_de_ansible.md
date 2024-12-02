@@ -214,7 +214,3 @@ ansible-playbook playbook.yml --vault-password-file vault_pass.txt
 Ansible Vault est un outil puissant pour sécuriser vos données sensibles dans des environnements DevOps modernes. Que vous gériez un simple serveur ou une infrastructure multi-environnements, Vault offre des solutions adaptées à vos besoins.
 
 En intégrant ces pratiques dans vos projets Ansible, vous minimisez les risques de fuite et améliorez la sécurité de votre infrastructure.
-
----
-
-Vous avez encore des secrets à sécuriser ? Essayez ces étapes dès aujourd'hui ! Si vous avez des questions ou souhaitez partager vos expériences, n'hésitez pas à commenter ! 😊
