@@ -43,9 +43,9 @@
 
             try {
                 console.log('Tentative de chargement de:', mdFile);
-                // Récupérer le chemin relatif du fichier Markdown sans l'extension
-                const relativePath = mdFile.replace(/\.md$/, '');
-                const response = await fetch(`../${relativePath}`);
+                // Ajout de l'extension .md si elle n'est pas présente
+                const fullPath = mdFile.endsWith('.md') ? mdFile : `${mdFile}.md`;
+                const response = await fetch(`../${fullPath}`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -54,10 +54,13 @@
                 const text = await response.text();
                 console.log('Contenu chargé:', text.substring(0, 100) + '...');
                 
+                // Suppression des métadonnées YAML et traitement du Markdown
                 const contentWithoutYAML = text.replace(/^---[\s\S]*?---\n/, '');
+                const htmlContent = marked.parse(contentWithoutYAML);
                 
-                document.getElementById('markdown-content').innerHTML = marked.parse(contentWithoutYAML);
+                document.getElementById('markdown-content').innerHTML = htmlContent;
                 
+                // Mise à jour du titre de la page
                 const firstLine = contentWithoutYAML.split('\n')[0];
                 document.title = firstLine.replace(/^#\s+/, '');
             } catch (error) {
