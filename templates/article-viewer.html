@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Article</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/dark-mode.css">
+    <link rel="stylesheet" href="../styles/markdown.css">
+    <!-- Ajout de marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <button id="theme-toggle">
+        <span class="light-mode">🌙</span>
+        <span class="dark-mode">☀️</span>
+    </button>
+    
+    <div class="container mt-5">
+        <div id="markdown-content" class="markdown-content">
+            <!-- Le contenu Markdown sera injecté ici -->
+        </div>
+    </div>
+
+    <script>
+        // Fonction pour charger et afficher le fichier Markdown
+        async function loadMarkdown() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const mdFile = urlParams.get('article');
+            
+            try {
+                const response = await fetch(mdFile);
+                const text = await response.text();
+                document.getElementById('markdown-content').innerHTML = marked.parse(text);
+                
+                // Extraire le titre du Markdown pour le titre de la page
+                const firstLine = text.split('\n')[0];
+                document.title = firstLine.replace(/^#\s+/, '');
+            } catch (error) {
+                console.error('Erreur lors du chargement du fichier Markdown:', error);
+            }
+        }
+
+        // Gestion du thème
+        const themeToggle = document.getElementById('theme-toggle');
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Charger le Markdown au chargement de la page
+        loadMarkdown();
+    </script>
+</body>
+</html> 
