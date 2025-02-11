@@ -43,7 +43,9 @@
 
             try {
                 console.log('Tentative de chargement de:', mdFile);
-                const response = await fetch(`../${mdFile}`);
+                // Récupérer le chemin relatif du fichier Markdown sans l'extension
+                const relativePath = mdFile.replace(/\.md$/, '');
+                const response = await fetch(`../${relativePath}`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
