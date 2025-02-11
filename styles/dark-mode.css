@@ -1,0 +1,27 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+
+[data-theme="dark"] {
+  --background-color: #222222;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Styles spécifiques pour les liens en mode sombre */
+[data-theme="dark"] a {
+  color: #66b3ff;
+}
+
+/* Styles spécifiques pour les boutons en mode sombre */
+[data-theme="dark"] button {
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #666666;
+} 

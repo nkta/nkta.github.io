@@ -5,8 +5,14 @@
     <title>Votre Site</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
 </head>
 <body>
+    <!-- Ajouter le bouton de basculement après l'ouverture du body -->
+    <button id="theme-toggle">
+        <span class="light-mode">🌙</span>
+        <span class="dark-mode">☀️</span>
+    </button>
     <!-- Titre de la page -->
     <h1 class="my-4 text-center">Bienvenue sur Mon Blog</h1>
 <div class="container mt-3">
@@ -53,7 +59,7 @@
             <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a href="Docker/docker_x_intellij">Optimisation du Développement Java avec Docker et IntelliJ IDEA</a></li>
                 <li class="list-group-item"><a href="Docker/tuto_docker_x_intellij">Tuto sur la configuration de Docker pour IntelliJ</a></li>
-                <li class="list-group-item"><a href="Docker/tuto_multiple_src">Dockerisation d’un projet avec plusieurs pom et src/</a></li>
+                <li class="list-group-item"><a href="Docker/tuto_multiple_src">Dockerisation d'un projet avec plusieurs pom et src/</a></li>
                 <li class="list-group-item"><a href="Docker/Modification_daemon_docker">Comment Modifier l'Adresse IP du Réseau Bridge de Docker</a></li>
                 <li class="list-group-item"><a href="Docker/ajout_image_dans_registry">Ajouter une image dans un registre privé</a></li>
                 <!-- Plus de liens vers des articles si nécessaire -->
@@ -99,6 +105,23 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Ajouter ce script avant la fermeture du body -->
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Vérifier si une préférence est déjà enregistrée
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
 
 </body>
 </html>
