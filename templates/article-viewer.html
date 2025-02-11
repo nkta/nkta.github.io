@@ -43,7 +43,7 @@
 
             try {
                 console.log('Tentative de chargement de:', mdFile);
-                const response = await fetch(`/${mdFile}`);
+                const response = await fetch('../' + mdFile);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
