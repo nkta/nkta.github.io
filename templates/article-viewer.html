@@ -27,16 +27,30 @@
             const urlParams = new URLSearchParams(window.location.search);
             const mdFile = urlParams.get('article');
             
+            if (!mdFile) {
+                document.getElementById('markdown-content').innerHTML = 'Erreur : Aucun article spécifié';
+                return;
+            }
+
             try {
-                const response = await fetch(mdFile);
+                console.log('Tentative de chargement de:', mdFile);
+                const response = await fetch('../../' + mdFile);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
                 const text = await response.text();
+                console.log('Contenu chargé:', text.substring(0, 100) + '...');
+                
                 document.getElementById('markdown-content').innerHTML = marked.parse(text);
                 
-                // Extraire le titre du Markdown pour le titre de la page
                 const firstLine = text.split('\n')[0];
                 document.title = firstLine.replace(/^#\s+/, '');
             } catch (error) {
                 console.error('Erreur lors du chargement du fichier Markdown:', error);
+                document.getElementById('markdown-content').innerHTML = 
+                    `Erreur lors du chargement de l'article: ${error.message}`;
             }
         }
 
