@@ -1,17 +1,84 @@
 :root {
   --background-color: #ffffff;
   --text-color: #333333;
+  --nav-bg-color: #f8f9fa;
+  --nav-text-color: #495057;
+  --link-color: #007bff;
+  --border-color: #dee2e6;
+  --list-hover-color: #f8f9fa;
 }
 
 [data-theme="dark"] {
   --background-color: #222222;
   --text-color: #ffffff;
+  --nav-bg-color: #333333;
+  --nav-text-color: #ffffff;
+  --link-color: #66b3ff;
+  --border-color: #444444;
+  --list-hover-color: #333333;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style des liens */
+a {
+  color: var(--link-color);
+  transition: color 0.3s ease;
+}
+
+/* Style des onglets de navigation */
+.nav-tabs {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link {
+  color: var(--nav-text-color);
+  background-color: var(--nav-bg-color);
+  border: 1px solid var(--border-color);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+}
+
+/* Style des éléments de liste */
+.list-group-item {
+  background-color: var(--background-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.list-group-item:hover {
+  background-color: var(--list-hover-color);
+}
+
+/* Style du bouton de basculement */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Gestion de l'affichage des icônes du bouton */
+[data-theme="light"] .dark-mode {
+  display: none;
+}
+
+[data-theme="dark"] .light-mode {
+  display: none;
 }
 
 /* Styles spécifiques pour les liens en mode sombre */
