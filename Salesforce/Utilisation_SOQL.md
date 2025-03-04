@@ -161,5 +161,3 @@ print(response.json())
 | **Apex** | Code Salesforce | Automatiser des requêtes en interne |
 | **API REST** | Postman, Python | Intégrer Salesforce avec d'autres applications |
 | **Python** | Script automatisé | Extraire et analyser des données Salesforce |
-
-👉 **Quelle méthode veux-tu tester en priorité ? 😊**
