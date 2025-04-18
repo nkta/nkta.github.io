@@ -62,4 +62,4 @@ Un LLM est avant tout un moteur de prédiction de tokens ; la moindre virgule qu
 
 Le white‑paper de Google témoigne : le *prompt engineering* est désormais une discipline complète, avec ses réglages fins, ses recettes et ses pièges. En appliquant ces techniques — de la simple *zero‑shot* aux arbres de pensées — vous transformerez vos LLM en collaborateurs fiables et créatifs. Alors, à vos prompts : testez, mesurez, itérez !
 
-[^1]: Source : White-paper Google, février 2025.
+[^1]: Source : [Google Prompt Engineering](https://www.gptaiflow.tech/assets/files/2025-01-18-pdf-1-TechAI-Goolge-whitepaper_Prompt%20Engineering_v4-af36dcc7a49bb7269a58b1c9b89a8ae1.pdf)
