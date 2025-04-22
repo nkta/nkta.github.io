@@ -124,22 +124,37 @@
             </ul>
         </div>
         <div class="tab-pane fade" id="categorie9" role="tabpanel" aria-labelledby="categorie9-tab">
-            <div class="mt-3">
-                <h5>Veille Java</h5>
-                <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item"><a href="Veille/Veille_Java">Veille Java</a></li>
-                    <!-- Ajoutez plus de liens pour la veille Java ici -->
-                </ul>
-                <h5>Veille DevOps</h5>
-                <ul class="list-group list-group-flush mb-3">
-                    <li class="list-group-item"><a href="Veille/Veille_DevOps">Veille DevOps</a></li>
-                    <!-- Ajoutez plus de liens pour la veille DevOps ici -->
-                </ul>
-                <h5>Veille IA</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="Veille/Veille_IA">Veille IA</a></li>
-                    <!-- Ajoutez plus de liens pour la veille IA ici -->
-                </ul>
+            <!-- Sous-onglets pour la veille -->
+            <ul class="nav nav-tabs mt-3" id="veilleTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="veille-java-tab" data-toggle="tab" href="#veille-java" role="tab" aria-controls="veille-java" aria-selected="true">Java</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="veille-devops-tab" data-toggle="tab" href="#veille-devops" role="tab" aria-controls="veille-devops" aria-selected="false">DevOps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="veille-ia-tab" data-toggle="tab" href="#veille-ia" role="tab" aria-controls="veille-ia" aria-selected="false">IA</a>
+                </li>
+            </ul>
+            <div class="tab-content mt-3" id="veilleTabContent">
+                <div class="tab-pane fade show active" id="veille-java" role="tabpanel" aria-labelledby="veille-java-tab">
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item"><a href="Veille/Veille_Java">Veille Java</a></li>
+                        <!-- Ajoutez plus de liens pour la veille Java ici -->
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="veille-devops" role="tabpanel" aria-labelledby="veille-devops-tab">
+                    <ul class="list-group list-group-flush mb-3">
+                        <li class="list-group-item"><a href="Veille/Veille_DevOps">Veille DevOps</a></li>
+                        <!-- Ajoutez plus de liens pour la veille DevOps ici -->
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="veille-ia" role="tabpanel" aria-labelledby="veille-ia-tab">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="Veille/Veille_IA">Veille IA</a></li>
+                        <!-- Ajoutez plus de liens pour la veille IA ici -->
+                    </ul>
+                </div>
             </div>
         </div>
 
