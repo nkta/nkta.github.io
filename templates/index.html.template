@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Votre Site</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+</head>
+<body>
+    <!-- Ajouter le bouton de basculement après l'ouverture du body -->
+    <button id="theme-toggle">
+        <span class="light-mode">🌙</span>
+        <span class="dark-mode">☀️</span>
+    </button>
+    <!-- Titre de la page -->
+    <h1 class="my-4 text-center">Bienvenue sur Mon Blog</h1>
+<div class="container mt-3">
+    <!-- Onglets de navigation -->
+    <ul class="nav nav-tabs" id="articleTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="categorie1-tab" data-toggle="tab" href="#categorie1" role="tab" aria-controls="categorie1" aria-selected="true">Windows Subsystem for Linux</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie2-tab" data-toggle="tab" href="#categorie2" role="tab" aria-controls="categorie2" aria-selected="false">Docker</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie3-tab" data-toggle="tab" href="#categorie3" role="tab" aria-controls="categorie3" aria-selected="false">Java</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie4-tab" data-toggle="tab" href="#categorie4" role="tab" aria-controls="categorie4" aria-selected="false">Mac</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie5-tab" data-toggle="tab" href="#categorie5" role="tab" aria-controls="categorie5" aria-selected="false">DevOps</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie6-tab" data-toggle="tab" href="#categorie6" role="tab" aria-controls="categorie6" aria-selected="false">Git</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie7-tab" data-toggle="tab" href="#categorie7" role="tab" aria-controls="categorie7" aria-selected="false">Salesforce</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie8-tab" data-toggle="tab" href="#categorie8" role="tab" aria-controls="categorie8" aria-selected="false">Prompt Engineering</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie9-tab" data-toggle="tab" href="#categorie9" role="tab" aria-controls="categorie9" aria-selected="false">Veille</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="categorie10-tab" data-toggle="tab" href="#categorie10" role="tab" aria-controls="categorie10" aria-selected="false">MCP</a>
+        </li>
+
+
+        <!-- Plus d'onglets si nécessaire -->
+    </ul>
+
+    <!-- Panneaux de contenu des onglets -->
+    <div class="tab-content markdown-content" id="articleTabContent">
+        <!-- Contenu de la Catégorie 1 -->
+        <div class="tab-pane fade show active" id="categorie1" role="tabpanel" aria-labelledby="categorie1-tab">
+            <!-- ARTICLES_WSL -->
+        </div>
+        <!-- Contenu de la Catégorie 2 -->
+        <div class="tab-pane fade" id="categorie2" role="tabpanel" aria-labelledby="categorie2-tab">
+            <!-- ARTICLES_DOCKER -->
+        </div>
+        <!-- Contenu de la Catégorie 3 -->
+        <div class="tab-pane fade" id="categorie3" role="tabpanel" aria-labelledby="categorie3-tab">
+            <!-- ARTICLES_JAVA -->
+        </div>
+        <!-- Contenu de la Catégorie 4 -->
+        <div class="tab-pane fade" id="categorie4" role="tabpanel" aria-labelledby="categorie4-tab">
+            <!-- ARTICLES_MAC -->
+        </div>
+        <div class="tab-pane fade" id="categorie5" role="tabpanel" aria-labelledby="categorie5-tab">
+            <!-- ARTICLES_DEVOPS -->
+        </div>
+        <!-- Contenu de l'onglet Git -->
+        <div class="tab-pane fade" id="categorie6" role="tabpanel" aria-labelledby="categorie6-tab">
+            <!-- ARTICLES_GIT -->
+        </div>
+        <!-- Contenu de l'onglet Salesforce -->
+        <div class="tab-pane fade" id="categorie7" role="tabpanel" aria-labelledby="categorie7-tab">
+            <!-- ARTICLES_SALESFORCE -->
+        </div>
+        <div class="tab-pane fade" id="categorie8" role="tabpanel" aria-labelledby="categorie8-tab">
+            <!-- ARTICLES_PROMPT_ENGINEERING -->
+        </div>
+        <div class="tab-pane fade" id="categorie9" role="tabpanel" aria-labelledby="categorie9-tab">
+            <!-- ARTICLES_VEILLE -->
+        </div>
+        <div class="tab-pane fade" id="categorie10" role="tabpanel" aria-labelledby="categorie10-tab">
+            <!-- ARTICLES_MCP -->
+        </div>
+        <!-- Plus de panneaux de contenu pour d'autres catégories si nécessaire -->
+    </div>
+</div>
+
+<!-- Bootstrap et dépendances JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Ajouter ce script avant la fermeture du body -->
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Vérifier si une préférence est déjà enregistrée
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+</script>
+
+</body>
+</html>

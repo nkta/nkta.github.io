@@ -5,12 +5,15 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:">
     <title>Article</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../styles/dark-mode.css">
-    <link rel="stylesheet" href="../../styles/markdown.css">
+    <link rel="stylesheet" href="/styles/dark-mode.css">
+    <link rel="stylesheet" href="/styles/markdown.css">
     <!-- Ajout de marked.js -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
+    <header class="bg-dark text-white text-center p-3">
+        <a href="/index.html" class="text-white">Retour au menu principal</a>
+    </header>
     <button id="theme-toggle">
         <span class="light-mode">🌙</span>
         <span class="dark-mode">☀️</span>
@@ -45,7 +48,7 @@
                 console.log('Tentative de chargement de:', mdFile);
                 // Récupérer le chemin relatif du fichier Markdown sans l'extension
                 const relativePath = mdFile.replace(/\.md$/, '');
-                const response = await fetch(`../${relativePath}`);
+                const response = await fetch(`/${mdFile}`);
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
