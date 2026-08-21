@@ -129,6 +129,7 @@ if __name__ == "__main__":
 
     categories_config = {
         '<!-- ARTICLES_WSL -->': {'folder': os.path.join(root_dir, 'WSL'), 'base_url': 'WSL'},
+        '<!-- ARTICLES_LINUX -->': {'folder': os.path.join(root_dir, 'Linux'), 'base_url': 'Linux'},
         '<!-- ARTICLES_DOCKER -->': {'folder': os.path.join(root_dir, 'Docker'), 'base_url': 'Docker'},
         '<!-- ARTICLES_JAVA -->': {'folder': os.path.join(root_dir, 'Java'), 'base_url': 'Java'},
         '<!-- ARTICLES_MAC -->': {'folder': os.path.join(root_dir, 'Mac'), 'base_url': 'Mac'},
